@@ -1,3 +1,11 @@
-fdsfdsafdfdsalköm
-df
-dsa
+num = int(input("Enter a number to check its Prime number: "))
+if num > 1:
+    for i in range(2, num):
+        if num % i == 0:
+            print(num, "is an not a Prime number.")
+            break
+        else:
+            print(num, "is an Prime number.")
+            break
+else:
+    print(num, "is an not a Prime number.")
