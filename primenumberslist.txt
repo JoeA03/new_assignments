@@ -1,0 +1,10 @@
+n = int(input("Enter a number to show Prime number: "))
+primes = []
+for num in range(2,n):
+    prime = True
+    for i in range(2,num):
+        if (num%i==0):
+            prime = False
+    if prime:
+       primes.append(num)
+print (primes)
